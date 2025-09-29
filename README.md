@@ -24,22 +24,23 @@ Este projeto demonstra a execução de ataques de **força bruta** utilizando a 
 
 2. **Automação em Formulário Web (DVWA)**
 
-  Teste de login com Medusa ou Hydra.
+   Teste de login com Medusa ou Hydra.
 
 4. **Password Spraying em SMB com Enumeração**
   ```bash
-  enum4linux -a 192.168.56.101
-  medusa -h 192.168.56.101 -U users.txt -P passwords.txt -M smbnt
+   enum4linux -a 192.168.56.101
+   medusa -h 192.168.56.101 -U users.txt -P passwords.txt -M smbnt
   ```
+---
 
-
-🔍 Resultados
+## 🔍 Resultados
 
 Foram obtidas credenciais válidas em serviços vulneráveis.
 Prints das execuções estão disponíveis na pasta /images.
 
+---
 
-🛡️ Recomendações de Mitigação
+## 🛡️ Recomendações de Mitigação
 
 Implementar políticas de senha forte.
 Configurar bloqueio após tentativas falhas.
